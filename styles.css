@@ -1,0 +1,418 @@
+/* Base styles */
+body{
+    font-family: 'Playfair', serif;
+    color: #3E342B;
+    background-color: #F8F5F0;
+    line-height: 1.6;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1, h2, h3{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+
+a{
+    color: #8C7B6B;
+}
+
+a:hover{
+    color: #6F6053;
+    text-decoration: underline;
+}
+
+
+/* Header */
+header{
+    text-align: center;
+    padding: 1rem 1rem 0.8rem;
+    border-bottom: none;
+    background-color: #EDE3D6;
+}
+
+header h1{
+    font-size: 2.6rem;
+    margin-bottom: 0.3rem;
+}
+
+header p{
+    color: #6F6053;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+
+/* Navigation */
+nav{
+    background-color: #EDE3D6;
+    padding: 0.85rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#6F6053;
+}
+
+nav a.active{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+
+/* Layout */
+main{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+section h2{
+    border-bottom: 2px solid #EDE3D6;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Shared content section cards */
+.skills-section,
+.education-section,
+.portfolio-section,
+.experience-section{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+
+/* Home page */
+.about-section{
+    display: grid;
+    grid-template-columns: 13rem 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 4rem;
+}
+.about-section div{
+    max-width: 40rem;
+}
+
+figure{
+    text-align: center;
+}
+
+figure img{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #E6DCCF;
+}
+
+
+/* Experience */
+.experience-section{
+    margin-top: 2rem;
+}
+
+.experience-section article{
+    margin-top: 1rem;
+}
+
+.experience-section h3{
+    margin-bottom: 0.75rem;
+}
+
+.experience-section p{
+    margin-bottom: 0.75rem;
+}
+
+
+/* Skills page */
+.skills-section {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.skills-section ul {
+    margin-top: 1rem;
+    line-height: 1.8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+    padding-left: 1.2rem;
+}
+
+.skills-section li{
+    margin-bottom: 0.4rem;
+}
+
+
+/* Education page */
+.education-section{
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.education-section article{
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #EDE3D6;
+}
+
+.education-section article:last-child{
+    border-bottom: none;
+    margin-top: 2.5rem;
+}
+
+.education-section h3{
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.education-section p{
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+}
+
+.school-logo{
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+/* Portfolio page */
+.portfolio-section article {
+    margin-top: 2rem;
+}
+
+
+
+
+/* Forms */
+/* Login */
+.login-section{
+    max-width: 30rem;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.login-section form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-section label{
+    margin-top: 1rem;
+}
+
+.login-section input{
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-section button{
+    margin-top: 1.5rem;
+    padding: 0.6rem;
+    border: none;
+    background-color: #8C7B6B;
+    color: white;
+    border-radius: 4px;
+}
+
+.login-section button:hover{
+    background-color: #6F6053;
+}
+
+
+/* Add blog entry*/
+.blog-section{
+    max-width: 40rem;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.blog-section form{
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-section label{
+    margin-top: 1rem;
+}
+
+.blog-section input,
+.blog-section textarea{
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.blog-section button{
+    margin-top: 1.5rem;
+    padding: 0.6rem;
+    border: none;
+    background-color: #8C7B6B;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.blog-buttons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.blog-buttons button{
+    flex: 1;
+    margin-top: 0;
+}
+
+.blog-section button:hover{
+    background-color: #6F6053;
+}
+
+
+/* Footer */
+footer{
+    background-color: #EDE3D6;
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #d8cfc3;
+    font-size: 1rem;
+    color: #5E5247;
+}
+
+footer p{
+    margin: 0.4rem 0;
+}
+
+footer a{
+    color: #6F6053;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #6F6053;
+    text-decoration: underline;
+}
+
+footer strong{
+    font-weight: 600;
+}
+
+
+
+
+/* Responsive design for tablet and phone */
+
+@media (max-width: 900px){  /*tablet*/
+    .about-section{
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+        padding: 2rem;
+    }
+
+    .about-section div{
+        max-width: 100%;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 600px){   /* phone */
+
+    header h1{
+        font-size: 2rem;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .about-section{
+        padding: 1.5rem;
+    }
+
+    figure img{
+        width: 9rem;
+        height: 9rem;
+    }
+
+    main{
+        padding: 0 1rem;
+    }
+
+    .skills-section ul{
+        grid-template-columns: 1fr;
+    }
+
+    .skills-section,
+    .education-section,
+    .portfolio-section,
+    .login-section,
+    .blog-section,
+    .experience-section{
+        padding: 1.5rem;
+    }
+
+    .education-section h3{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .school-logo{
+        width: 36px;
+        height: 36px;
+    }
+
+    .blog-buttons{
+        flex-direction: column;
+    }
+
+}
+

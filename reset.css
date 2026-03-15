@@ -1,0 +1,9 @@
+body, header, nav, main, section, article, figure, figcaption, footer,
+h1, h2, h3, p, ul, li
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
